@@ -45,3 +45,8 @@ jobs:
           echo "Los nombres son: ${{ env.nombres }}"
           echo "Los apellidos son: ${{ env.apellidos }}"
           echo "La edad es: ${{ env.edad }}"
+
+      # Impresion de datos generales
+      - name: datos generales
+        run: |
+          echo "carrera de ingeniería de sistemas"
