@@ -39,10 +39,9 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project.
 
-      # Impresion de variables de entorno
-      - name: Varibles de entorno
+      # Impresion de presentación
+      - name: Presentación
         run: |
-          echo "La variable de entorno es: $MY_ENV_VAR"
           echo "Los nombres son: ${{ env.nombres }}"
           echo "Los apellidos son: ${{ env.apellidos }}"
           echo "La edad es: ${{ env.edad }}"
