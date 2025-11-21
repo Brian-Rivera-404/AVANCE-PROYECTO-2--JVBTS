@@ -18,8 +18,8 @@ jobs:
   build:
     env:
       MY_ENV_VAR: "Mi primera variable de entorno"
-      nombres: "Brian"
-      apellidos: "Rivera"
+      nombres: "Brian Alexis"
+      apellidos: "Rivera Bautista"
       edad: "21"
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
@@ -38,3 +38,11 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+
+      # Impresion de variables de entorno
+      - name: Varibles de entorno
+        run: |
+          echo "La variable de entorno es: $MY_ENV_VAR"
+          echo "Los nombres son: ${{ env.nombres }}"
+          echo "Los apellidos son: ${{ env.apellidos }}"
+          echo "La edad es: ${{ env.edad }}"
