@@ -12,4 +12,3 @@ const config = {
 
 console.log('Configuración cargada:', config.nombre);
 EOL
-// Versión develop
